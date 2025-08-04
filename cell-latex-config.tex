@@ -1,0 +1,40 @@
+% Extra useful packages
+\usepackage{xspace}
+\usepackage{mathtools}
+
+\usepackage{amsmath,amsfonts,amssymb}
+%\usepackage{algorithmic}
+%\usepackage{graphicx}
+%\usepackage{textcomp}
+\usepackage{xcolor}
+
+% special circle character    
+\def\invcircledast#1{%
+  \mathbin{\vphantom{\circledast}\text{%
+    \ooalign{\smash{\blackcircle}\cr
+             \hidewidth\smash{\textcolor{white}{\bf \footnotesize $#1$}}\hidewidth\cr
+            }%
+  }}%
+}
+\newcommand{\blackcircle}{\raisebox{-.6ex}{\scalebox{2.30}{$\bullet$}}}
+
+% Name
+\newcommand{\Design}{$\mathsf{DiTTO}$\xspace}
+\newcommand{\Designn}{PersonalizedHD\xspace}
+
+% Math
+%\usepackage{amsthm}
+\newtheorem{prop}{Proposition}
+\usepackage{multirow}
+
+\usepackage{kotex}
+
+% Space control
+\renewcommand{\baselinestretch}{0.97}
+\setlength{\textfloatsep}{1pt}
+\setlength{\dbltextfloatsep}{1pt}
+
+\newcommand{\todo}[1]{{\color{red}{#1}}}
+\newcommand{\ys}[1]{{\color{blue}{#1}}}
+
+\newcommand{\Figure}{Fig.}
